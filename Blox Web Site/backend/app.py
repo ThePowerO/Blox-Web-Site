@@ -24,3 +24,4 @@ def create_acc():
 
         if password == confirm_password:
             db = get_db()
+            cursor = db.cursor()
