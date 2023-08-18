@@ -28,3 +28,4 @@ def create_acc():
             cursor.execute('INSERT INTO users (nickname, password) VALUES (?, ?)', (nickname, password))
             db.commit()
             return "Account created successfully!"
+        else:
