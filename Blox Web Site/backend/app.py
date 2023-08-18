@@ -20,3 +20,4 @@ def create_acc():
     if request.method == "POST":
         nickname = request.form['nickname']
         password = request.form['password']
+        confirm_password = request.form['confirm_password']
