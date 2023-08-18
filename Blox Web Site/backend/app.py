@@ -4,3 +4,5 @@ import sqlite3
 app = Flask(__name__)
 
 DATABASE = 'users.db'
+
+def get_db():
