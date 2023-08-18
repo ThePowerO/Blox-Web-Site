@@ -21,3 +21,5 @@ def create_acc():
         nickname = request.form['nickname']
         password = request.form['password']
         confirm_password = request.form['confirm_password']
+
+        if password == confirm_password:
