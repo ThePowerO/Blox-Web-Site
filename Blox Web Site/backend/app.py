@@ -13,3 +13,4 @@ def get_db():
 
 @app.route("/")
 def index():
+    return render_template("index.html")
