@@ -29,3 +29,4 @@ def create_acc():
             db.commit()
             return "Account created successfully!"
         else:
+            return "Passwords do not match. Account creation failed."
