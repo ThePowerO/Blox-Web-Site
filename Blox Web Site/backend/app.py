@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, g
 import sqlite3
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__)
 
 @app.route('/')
 def index():
