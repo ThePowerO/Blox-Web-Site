@@ -27,3 +27,4 @@ def create_acc():
             cursor = db.cursor()
             cursor.execute('INSERT INTO users (nickname, password) VALUES (?, ?)', (nickname, password))
             db.commit()
+            return "Account created successfully!"
