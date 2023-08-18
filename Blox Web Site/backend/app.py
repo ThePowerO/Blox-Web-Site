@@ -12,3 +12,4 @@ def get_db():
     return db
 
 @app.route("/")
+def index():
