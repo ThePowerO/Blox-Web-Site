@@ -14,3 +14,4 @@ def get_db():
 @app.route("/")
 def index():
     return render_template("index.html")
+@app.route('/create_acc', methods=["POST", "GET"])
