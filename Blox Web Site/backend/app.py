@@ -40,3 +40,21 @@ def create_acc():
 
 @app.route('/register', methods=["POST", "GET"])
 def register():
+
+    if request.method == "POST":
+        nickname = request.form['nickname']
+        password = request.form['password']
+
+        user = User.query.filter_by(nickname=nickname, password=password).first()
+
+        if user:
+            video['senha']
+            session['user_nickname'] = user.nickname
+            return redirect(url_for("dashboard"))
+        else:
+            return "Login failed. Invalid credentials."
+
+    return render_template('layout.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
