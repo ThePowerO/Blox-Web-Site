@@ -33,3 +33,4 @@ def create_acc():
             db.session.add(new_user)
             db.session.commit()
             return redirect(url_for("register"))
+        else:
