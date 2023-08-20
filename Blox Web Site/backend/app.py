@@ -29,3 +29,4 @@ def create_acc():
         confirm_password = request.form['confirm_password']
 
         if password == confirm_password:
+            new_user = User(nickname=nickname, password=password)
