@@ -32,3 +32,4 @@ def create_acc():
             new_user = User(nickname=nickname, password=password)
             db.session.add(new_user)
             db.session.commit()
+            return redirect(url_for("register"))
