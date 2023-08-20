@@ -18,3 +18,4 @@ def index():
 
 @app.route("/dashboard")
 def dashboard():
+    user_nickname = session.get('user_nickname')
