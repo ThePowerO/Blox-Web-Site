@@ -13,3 +13,4 @@ class User(db.Model):
     password = db.Column(db.String(100), nullable=False)
 
 @app.route("/")
+def index():
