@@ -37,3 +37,5 @@ def create_acc():
             return "Passwords do not match. Account creation failed."
 
     return render_template("create_acc.html")
+
+@app.route('/register', methods=["POST", "GET"])
