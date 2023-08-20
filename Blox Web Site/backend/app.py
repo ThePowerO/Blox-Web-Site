@@ -20,3 +20,5 @@ def index():
 def dashboard():
     user_nickname = session.get('user_nickname')
     return render_template("dashboard.html", user_nickname=user_nickname)
+
+@app.route('/create_acc', methods=["POST", "GET"])
