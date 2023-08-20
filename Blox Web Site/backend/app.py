@@ -35,3 +35,5 @@ def create_acc():
             return redirect(url_for("register"))
         else:
             return "Passwords do not match. Account creation failed."
+
+    return render_template("create_acc.html")
