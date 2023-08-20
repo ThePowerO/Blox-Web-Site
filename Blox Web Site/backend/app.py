@@ -14,3 +14,4 @@ class User(db.Model):
 
 @app.route("/")
 def index():
+    return render_template("index.html")
