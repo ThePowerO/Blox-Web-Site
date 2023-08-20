@@ -31,3 +31,4 @@ def create_acc():
         if password == confirm_password:
             new_user = User(nickname=nickname, password=password)
             db.session.add(new_user)
+            db.session.commit()
