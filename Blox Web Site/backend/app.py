@@ -34,3 +34,4 @@ def create_acc():
             db.session.commit()
             return redirect(url_for("register"))
         else:
+            return "Passwords do not match. Account creation failed."
