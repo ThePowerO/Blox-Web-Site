@@ -22,3 +22,4 @@ def dashboard():
     return render_template("dashboard.html", user_nickname=user_nickname)
 
 @app.route('/create_acc', methods=["POST", "GET"])
+def create_acc():
