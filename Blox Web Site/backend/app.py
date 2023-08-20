@@ -25,3 +25,4 @@ def dashboard():
 def create_acc():
     if request.method == "POST":
         nickname = request.form['nickname']
+        password = request.form['password']
