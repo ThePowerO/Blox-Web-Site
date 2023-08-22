@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../static/dashboard.css">
 </head>
 <body>
-
+    
     <aside id="header">
         <section class="mainbar">
             <img src="../static/img/channels4_profile.png" alt="User's Profile IMG">
@@ -22,3 +22,41 @@
                 <a href="#">
                     <i class="bi bi-clipboard2-data"></i>
                 </a>
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-translate"></i>
+                </a>
+            </div>
+        </section>
+
+        <nav id="nav" class="nav-menu mt-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-book" aria-hidden="true"></i> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('create_combo')}}"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Your Combo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
+                </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link" href="{{url_for('register')}}"><i class="bi bi-door-open" aria-hidden="true"></i> Log Out</a>
+                </li>
+              </ul>
+        </nav>
+    </aside>
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
