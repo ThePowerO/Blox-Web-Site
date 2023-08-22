@@ -21,6 +21,10 @@ def dashboard():
     user_nickname = session.get('user_nickname')
     return render_template("dashboard.html", user_nickname=user_nickname)
 
+@app.route('/create_combo')
+def create_combo():
+    return render_template("create_combo.html")
+
 @app.route('/create_acc', methods=["POST", "GET"])
 def create_acc():
     if request.method == "POST":
@@ -48,7 +52,6 @@ def register():
         user = User.query.filter_by(nickname=nickname, password=password).first()
 
         if user:
-            video['senha']
             session['user_nickname'] = user.nickname
             return redirect(url_for("dashboard"))
         else:
