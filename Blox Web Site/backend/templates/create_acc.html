@@ -10,3 +10,59 @@
     <link rel="stylesheet" href="../static/dashboard.css">
     <link rel="stylesheet" href="../static/create_combo.css">
 </head>
+<body>
+    
+    <aside id="header">
+        <section class="mainbar">
+            <img src="../static/img/channels4_profile.png" alt="User's Profile IMG">
+            <h1>{{ user_nickname }}</h1>
+            <div class="configurations mt-4 text-center">
+                <a href="#">
+                    <i class="bi bi-person-fill"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-clipboard2-data"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-translate"></i>
+                </a>
+            </div>
+        </section>
+
+        <nav id="nav" class="nav-menu mt-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Your Combo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
+                </li>
+              </ul>
+        </nav>
+    </aside>
+
+    <main id="main">
+        <div id="filter">
+            <select id="filter-select">
+                <option value="all">Select Fruit</option>
+                <option value="done">Done</option>
+                <option value="todo">To Do</option>
+                <option value="all">Select Fruit</option>
+            </select>
+        </div>
+    </main>
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
