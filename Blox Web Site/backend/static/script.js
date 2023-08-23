@@ -23,3 +23,4 @@ const selectElements = document.querySelectorAll(".filter");
 const imageElements = document.querySelectorAll(".fightingStyleImage");
 
 selectElements.forEach((selectElement, index) => {
+    selectElement.addEventListener("change", function() {
