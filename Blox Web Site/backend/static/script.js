@@ -26,3 +26,5 @@ selectElements.forEach((selectElement, index) => {
     selectElement.addEventListener("change", function() {
         const selectedValue = selectElement.value;
         const imageElement = imageElements[index];
+
+            // Blox Fruits
