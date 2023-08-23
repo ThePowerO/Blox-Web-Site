@@ -56,7 +56,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/DarkNew.png"; 
             }
             else if (selectedValue === "Diamond") {
-                imageElement.src = "../static/img/DiamondNew.png"; 
+                imageElement.src = "../static/img/DiamondNew.png";
             }
             else if (selectedValue === "Flame") {
                 imageElement.src = "../static/img/FlameNew.png"; 
