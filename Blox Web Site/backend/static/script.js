@@ -8,3 +8,4 @@ const toggleActiveClass = (selectedOption) => {
             option.classList.remove("active");
         }
     });
+};
