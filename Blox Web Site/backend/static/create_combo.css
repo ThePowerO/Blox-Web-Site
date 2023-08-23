@@ -7,15 +7,31 @@
     bottom: 0;
 }
 
-#filter {
+.content {
     margin-top: 1.5rem;
     margin-left: 1.5rem;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
+    border: 2px solid black;
+    padding-bottom: 10px;
+    width: 450px;
+    padding-right: 150px;
+
 }
 
-#filter select {
-    flex: 1;
-    
+.content img {
+    width: 23%;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.filter {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 200px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    background: transparent;
+    border: 0;
 }
