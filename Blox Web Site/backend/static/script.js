@@ -7,3 +7,4 @@ const toggleActiveClass = (selectedOption) => {
         } else {
             option.classList.remove("active");
         }
+    });
