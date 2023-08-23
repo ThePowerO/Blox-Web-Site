@@ -199,7 +199,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Pole_1.png"; 
             }
             else if (selectedValue === "Soul Cane") {
-                imageElement.src = "../static/img/Soul_Cane.png"; 
+                imageElement.src = "../static/img/Soul_Cane.png";
             }
             else if (selectedValue === "Warden Sword") {
                 imageElement.src = "../static/img/Warden_Sword.png"; 
