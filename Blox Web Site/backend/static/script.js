@@ -12,3 +12,5 @@ const toggleActiveClass = (selectedOption) => {
 
 document.addEventListener('click', (e) => {
     const targetEl = e.target;
+
+    if (targetEl.classList.contains("nav-link")) {
