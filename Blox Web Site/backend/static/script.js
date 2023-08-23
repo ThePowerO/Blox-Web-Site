@@ -15,3 +15,4 @@ document.addEventListener('click', (e) => {
 
     if (targetEl.classList.contains("nav-link")) {
         toggleActiveClass(targetEl);
+    }
