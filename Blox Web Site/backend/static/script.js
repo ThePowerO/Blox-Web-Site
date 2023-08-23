@@ -28,3 +28,4 @@ selectElements.forEach((selectElement, index) => {
         const imageElement = imageElements[index];
 
             // Blox Fruits
+            if (selectedValue === "Dark Blade") {
