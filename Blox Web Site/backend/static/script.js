@@ -11,3 +11,4 @@ const toggleActiveClass = (selectedOption) => {
 };
 
 document.addEventListener('click', (e) => {
+    const targetEl = e.target;
