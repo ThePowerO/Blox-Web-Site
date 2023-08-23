@@ -20,3 +20,4 @@ document.addEventListener('click', (e) => {
 
 /* */
 const selectElements = document.querySelectorAll(".filter");
+const imageElements = document.querySelectorAll(".fightingStyleImage");
