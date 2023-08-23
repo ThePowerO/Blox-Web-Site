@@ -9,3 +9,5 @@ const toggleActiveClass = (selectedOption) => {
         }
     });
 };
+
+document.addEventListener('click', (e) => {
