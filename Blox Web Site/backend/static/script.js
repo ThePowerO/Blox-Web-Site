@@ -252,6 +252,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Electric_Claw.png"; 
             }
             else if (selectedValue === "Dragon Talon") {
+                imageElement.src = "../static/img/Dragon_Talon.png"; 
 
         });
 });
