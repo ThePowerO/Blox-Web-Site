@@ -250,6 +250,7 @@ selectElements.forEach((selectElement, index) => {
             }
             else if (selectedValue === "Electric Claw") {
                 imageElement.src = "../static/img/Electric_Claw.png"; 
+            }
 
         });
 });
