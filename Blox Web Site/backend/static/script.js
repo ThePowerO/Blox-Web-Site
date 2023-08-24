@@ -246,6 +246,7 @@ selectElements.forEach((selectElement, index) => {
 
             // Fighting Styles
             else if (selectedValue === "Godhuman") {
-        
+                imageElement.src = "../static/img/Godhuman.png"; 
+
         });
 });
