@@ -20,7 +20,7 @@
 .content img {
     width: 23%;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
     border: 1px solid black;
 }
 
@@ -60,3 +60,33 @@
 .description-box input:focus {
     border: 1px solid #000;
     outline: 0;
+}
+
+.description-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.description-box textarea:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.description-box button {
+    border: 0;
+    padding: 10px 30px;
+    background: #86b0b6;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.description-box button:hover {
+    background-color: #718a8e;
+    transform: scale(1.03);
+}
