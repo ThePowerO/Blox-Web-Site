@@ -245,5 +245,7 @@ selectElements.forEach((selectElement, index) => {
             }
 
             // Fighting Styles
+            else if (selectedValue === "Godhuman") {
+        
         });
 });
