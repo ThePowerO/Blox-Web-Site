@@ -50,13 +50,13 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/RumbleNew.png"; 
             }
             else if (selectedValue === "Buddha") {
-                imageElement.src = "../static/img/BuddhaNew.png";
+                imageElement.src = "../static/img/BuddhaNew.png"; 
             }
             else if (selectedValue === "Dark") {
                 imageElement.src = "../static/img/DarkNew.png"; 
             }
             else if (selectedValue === "Diamond") {
-                imageElement.src = "../static/img/DiamondNew.png";
+                imageElement.src = "../static/img/DiamondNew.png"; 
             }
             else if (selectedValue === "Flame") {
                 imageElement.src = "../static/img/FlameNew.png"; 
@@ -199,7 +199,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Pole_1.png"; 
             }
             else if (selectedValue === "Soul Cane") {
-                imageElement.src = "../static/img/Soul_Cane.png";
+                imageElement.src = "../static/img/Soul_Cane.png"; 
             }
             else if (selectedValue === "Warden Sword") {
                 imageElement.src = "../static/img/Warden_Sword.png"; 
@@ -243,6 +243,9 @@ selectElements.forEach((selectElement, index) => {
             else if (selectedValue === "Dragon Trident") {
                 imageElement.src = "../static/img/Dragon_Trident.png"; 
             }
+            else if (selectedValue === "Jitte") {
+                imageElement.src = "../static/img/Jitte.png"; 
+            }
 
             // Fighting Styles
             else if (selectedValue === "Godhuman") {
@@ -255,6 +258,69 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Dragon_Talon.png"; 
             }
             else if (selectedValue === "Sharkman Karate") {
+                imageElement.src = "../static/img/Sharkman_Karate.png"; 
+            }
+            else if (selectedValue === "Super Human") {
+                imageElement.src = "../static/img/Superhuman.png"; 
+            }
+            else if (selectedValue === "Death Step") {
+                imageElement.src = "../static/img/Death_Step.png"; 
+            }
+            else if (selectedValue === "Dragon Breath") {
+                imageElement.src = "../static/img/Dragon_Breath.png"; 
+            }
+            else if (selectedValue === "Water Kung Fu") {
+                imageElement.src = "../static/img/Water_Kung_Fu.png"; 
+            }
+            else if (selectedValue === "Electric") {
+                imageElement.src = "../static/img/Electric.png"; 
+            }
+            else if (selectedValue === "Dark Step") {
+                imageElement.src = "../static/img/Dark_Step.png"; 
+            }
+            else if (selectedValue === "Combat") {
+                imageElement.src = "../static/img/Combat.png"; 
+            }
 
+            // Guns
+            else if (selectedValue === "Soul Guitar") {
+                imageElement.src = "../static/img/Soul_Guitar.png"; 
+            }
+            else if (selectedValue === "Acidum Rifle") {
+                imageElement.src = "../static/img/Acidum_Rifle.png"; 
+            }
+            else if (selectedValue === "Kabucha") {
+                imageElement.src = "../static/img/Kabucha.png"; 
+            }
+            else if (selectedValue === "Serpent Bow") {
+                imageElement.src = "../static/img/Serpent_Bow.png"; 
+            }
+            else if (selectedValue === "Bizarre Rifle") {
+                imageElement.src = "../static/img/Bizarre_Rifle.png"; 
+            }
+            else if (selectedValue === "Bazooka") {
+                imageElement.src = "../static/img/Bazooka.png"; 
+            }
+            else if (selectedValue === "Refined Slingshot") {
+                imageElement.src = "../static/img/Refined_Slingshot.png"; 
+            }
+            else if (selectedValue === "Refined Musket") {
+                imageElement.src = "../static/img/Refined_Musket.png"; 
+            }
+            else if (selectedValue === "Refined Flintlock") {
+                imageElement.src = "../static/img/Refined_Flintlock.png"; 
+            }
+            else if (selectedValue === "Cannon") {
+                imageElement.src = "../static/img/Cannon.png"; 
+            }
+            else if (selectedValue === "Musket") {
+                imageElement.src = "../static/img/Musket.png"; 
+            }
+            else if (selectedValue === "Flintlock") {
+                imageElement.src = "../static/img/Flintlock.png"; 
+            }
+            else if (selectedValue === "Slingshot") {
+                imageElement.src = "../static/img/Slingshot.png"; 
+            }
         });
 });
