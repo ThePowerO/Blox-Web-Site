@@ -243,5 +243,7 @@ selectElements.forEach((selectElement, index) => {
             else if (selectedValue === "Dragon Trident") {
                 imageElement.src = "../static/img/Dragon_Trident.png"; 
             }
+
+            // Fighting Styles
         });
 });
