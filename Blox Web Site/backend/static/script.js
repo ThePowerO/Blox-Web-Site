@@ -249,6 +249,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Godhuman.png"; 
             }
             else if (selectedValue === "Electric Claw") {
+                imageElement.src = "../static/img/Electric_Claw.png"; 
 
         });
 });
