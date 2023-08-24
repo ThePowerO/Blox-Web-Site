@@ -56,3 +56,5 @@
     border-radius: 5px;
     border: 1px solid #86b0b6;
 }
+
+.description-box input:focus {
