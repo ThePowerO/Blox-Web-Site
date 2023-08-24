@@ -254,6 +254,7 @@ selectElements.forEach((selectElement, index) => {
             else if (selectedValue === "Dragon Talon") {
                 imageElement.src = "../static/img/Dragon_Talon.png"; 
             }
+            else if (selectedValue === "Sharkman Karate") {
 
         });
 });
