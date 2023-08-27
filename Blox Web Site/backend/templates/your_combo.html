@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../static/your_combo.css">
 </head>
 <body>
-
+    
     <aside id="header">
         <section class="mainbar">
             <img src="../static/img/channels4_profile.png" alt="User's Profile IMG">
@@ -23,3 +23,70 @@
                 </a>
                 <a href="#">
                     <i class="bi bi-clipboard2-data"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-translate"></i>
+                </a>
+            </div>
+        </section>
+
+        <nav id="nav" class="nav-menu mt-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="bi bi-plus-square" aria-hidden="true"></i> Viewing Combo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('view_combo')}}"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('community_combo')}}"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
+                </li>
+              </ul>
+        </nav>
+    </aside>
+
+    <main id="main">
+        <h3 class="Edit-Title"> Combo:</h3>
+            <div class="content ">
+                <select class="filter" name="fruit">
+                    <option value="{{ combo.fruit }}">Selected Fruit:</option>
+                </select>
+                <img class="fightingStyleImage" src="../static/img/{{ combo.fruit }}.png" title="Fruit">
+            </div>
+            <div class="content ">
+                <select class="filter" name="fighting_style">
+                    <option value="{{ combo.fighting_style }}">Selected Fighting Style:</option>
+                </select>
+                <img class="fightingStyleImage" src="../static/img/{{ combo.fighting_style }}.png" title="Fighting Style">
+            </div>
+            <div class="content ">
+                <select class="filter" name="sword">
+                    <option value="{{ combo.sword }}">Selected Sword:</option>
+                </select>
+                <img class="fightingStyleImage" src="../static/img/{{ combo.sword }}.png" title="Sword">
+            </div>
+            <div class="content ">
+                <select class="filter" name="gun">
+                    <option value="{{ combo.gun }}">Selected Gun:</option>
+                </select>
+                <img class="fightingStyleImage" src="../static/img/{{ combo.gun }}.png" title="Gun">
+            </div>
+            <div class="description-box">
+                <h2>Combo's Information</h2>
+                <input type="text" name="combo_name" placeholder="Name your combo..." value="{{ combo.combo_name }}">
+                <textarea name="description" placeholder="Type your description...">{{ combo.description }}</textarea>
+                <a href="{{url_for('view_combo')}}"><button>Return</button></a>
+            </div>
+    </main>
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
