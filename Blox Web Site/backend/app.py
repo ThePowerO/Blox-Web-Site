@@ -86,6 +86,7 @@ def edit_combo(id):
         new_description = request.form['description']
 
         # Update the combo's information in the database
+        combo_to_edit.fruit = new_fruit
 
 
 if __name__ == '__main__':
