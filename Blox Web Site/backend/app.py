@@ -91,6 +91,7 @@ def edit_combo(id):
         combo_to_edit.sword = new_sword
         combo_to_edit.gun = new_gun
         combo_to_edit.combo_name = new_combo_name
+        combo_to_edit.description = new_description
 
 
 if __name__ == '__main__':
