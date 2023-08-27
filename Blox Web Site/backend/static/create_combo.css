@@ -44,7 +44,7 @@
 }
 
 .description-box h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -89,4 +89,26 @@
 .description-box button:hover {
     background-color: #718a8e;
     transform: scale(1.03);
+}
+
+.description-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.alert-success {
+    position: absolute;
+    top: 23rem;
+    left: 61%;
+    width: 500px;
+}
+
+.close-success {
+    margin-left: 15rem;
+    color: red;
+}
+
+.Edit-Title {
+    font-size: 24px;
+    margin-left: 13px;
 }
