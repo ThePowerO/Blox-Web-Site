@@ -61,6 +61,7 @@ def register():
 
 @app.route('/delete_combo/<int:id>', methods=['POST'])
 def delete_combo(id):
+    combo_to_delete = Combo.query.get(id)
 
 
 if __name__ == '__main__':
