@@ -75,6 +75,8 @@ def delete_combo(id):
 def edit_combo(id):
     combo_to_edit = Combo.query.get(id)
 
+    if request.method == 'POST':
+
 
 if __name__ == '__main__':
     app.run(debug=True)
