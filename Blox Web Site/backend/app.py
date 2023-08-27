@@ -85,6 +85,8 @@ def edit_combo(id):
         new_combo_name = request.form['combo_name']
         new_description = request.form['description']
 
+        # Update the combo's information in the database
+
 
 if __name__ == '__main__':
     app.run(debug=True)
