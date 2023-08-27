@@ -87,6 +87,7 @@ def edit_combo(id):
 
         # Update the combo's information in the database
         combo_to_edit.fruit = new_fruit
+        combo_to_edit.fighting_style = new_fighting_style
 
 
 if __name__ == '__main__':
