@@ -67,6 +67,7 @@ def delete_combo(id):
         db.session.delete(combo_to_delete)
         db.session.commit()
     else:
+        pass
 
 
 if __name__ == '__main__':
