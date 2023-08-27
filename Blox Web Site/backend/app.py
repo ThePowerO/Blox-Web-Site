@@ -73,6 +73,7 @@ def delete_combo(id):
 
 @app.route('/edit_combo/<int:id>', methods=['POST', 'GET'])
 def edit_combo(id):
+    combo_to_edit = Combo.query.get(id)
 
 
 if __name__ == '__main__':
