@@ -89,6 +89,7 @@ def edit_combo(id):
         combo_to_edit.fruit = new_fruit
         combo_to_edit.fighting_style = new_fighting_style
         combo_to_edit.sword = new_sword
+        combo_to_edit.gun = new_gun
 
 
 if __name__ == '__main__':
