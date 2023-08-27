@@ -35,13 +35,13 @@
         <nav id="nav" class="nav-menu mt-4">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Your Combo</a>
+                  <a class="nav-link active" href="#"><i class="bi bi-plus-square" aria-hidden="true"></i> Editing Your Combo</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{url_for('view_combo')}}"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                    <a class="nav-link" href="{{url_for('community_combo')}}"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
@@ -51,6 +51,7 @@
     </aside>
 
     <main id="main">
+        <h3 class="Edit-Title">Edit Your Combo:</h3>
         <form action="{{ url_for('edit_combo', id=combo.id) }}" method="POST">
             <div class="content ">
                 <select class="filter" name="fruit">
@@ -172,8 +173,8 @@
             </div>
             <div class="description-box">
                 <h2>About Your Combo</h2>
-                <input type="text" name="combo_name" placeholder="Name your combo..." value="{{ combo.combo_name }}">
-                <textarea name="description" placeholder="Type your description...">{{ combo.description }}</textarea>
+                <input type="text" name="combo_name" placeholder="Name your combo..." value="{{ combo.combo_name }}" maxlength="30" required>
+                <textarea name="description" placeholder="Type your description..." maxlength="500" required>{{ combo.description }}</textarea>
                 <button type="submit" value="Confirm">Edit Combo</button>
             </div>
         </form>
