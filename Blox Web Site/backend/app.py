@@ -64,6 +64,7 @@ def delete_combo(id):
     combo_to_delete = Combo.query.get(id)
 
     if combo_to_delete:
+        db.session.delete(combo_to_delete)
 
 
 if __name__ == '__main__':
