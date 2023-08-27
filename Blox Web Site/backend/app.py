@@ -83,6 +83,7 @@ def edit_combo(id):
         new_sword = request.form['sword']
         new_gun = request.form['gun']
         new_combo_name = request.form['combo_name']
+        new_description = request.form['description']
 
 
 if __name__ == '__main__':
