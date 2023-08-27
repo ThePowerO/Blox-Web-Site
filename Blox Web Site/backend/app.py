@@ -93,6 +93,8 @@ def edit_combo(id):
         combo_to_edit.combo_name = new_combo_name
         combo_to_edit.description = new_description
 
+        db.session.commit()
+
 
 if __name__ == '__main__':
     app.run(debug=True)
