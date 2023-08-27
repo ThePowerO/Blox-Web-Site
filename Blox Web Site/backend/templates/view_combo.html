@@ -42,7 +42,7 @@
                   <a class="nav-link active" href="#"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                    <a class="nav-link" href="{{url_for('community_combo')}}"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
@@ -53,7 +53,7 @@
 
     <main id="main">
         <!-- Existing content -->
-        <h2>Your Combos</h2>
+        <h2>Your Combos:</h2>
         {% for combo in combos %}
         <div class="content">
             <div class="combo-list">
@@ -63,7 +63,9 @@
                     <img src="../static/img/{{ combo.fighting_style }}.png" alt="{{ combo.fighting_style }}">
                     <img src="../static/img/{{ combo.sword }}.png" alt="{{ combo.sword }}">
                     <img src="../static/img/{{ combo.gun }}.png" alt="{{ combo.gun }}">
-                    <button class="btn btn-warning">View Combo</button>
+                    <form method="get" action="{{ url_for('your_combo', id=combo.id)}}" style="display: inline;">
+                        <button class="btn btn-warning" type="submit">View Combo</button>
+                    </form>
                     <form method="get" action="{{ url_for('edit_combo', id=combo.id)}}" style="display: inline;">
                         <button class="btn btn-primary" type="submit">Edit Combo</button>
                     </form>
