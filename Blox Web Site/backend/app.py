@@ -79,6 +79,7 @@ def edit_combo(id):
         print(request.form)
         # Retrieve edited combo data from form
         new_fruit = request.form['fruit']
+        new_fighting_style = request.form['fighting_style']
 
 
 if __name__ == '__main__':
