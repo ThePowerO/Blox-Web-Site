@@ -69,6 +69,7 @@ def delete_combo(id):
     else:
         pass
 
+    return redirect(url_for('view_combo'))
 
 if __name__ == '__main__':
     app.run(debug=True)
