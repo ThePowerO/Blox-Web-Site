@@ -211,6 +211,9 @@ def load_more_combos():
     page = int(request.args.get('page', 1))
     combos_per_page = 10
 
+    user = User.query.filter_by(nickname=session['user_nickname']).first()
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
