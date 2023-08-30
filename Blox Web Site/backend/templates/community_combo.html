@@ -63,20 +63,23 @@
         </section>
         {% for combo in combos %}
         <div class="content">
-            <div class="combo-list">
-                <div class="combo">
-                    <h3>{{ combo.combo_name }}</h3>
-                    <img src="../static/img/{{ combo.fruit }}.png" alt="{{ combo.fruit }}">
-                    <img src="../static/img/{{ combo.fighting_style }}.png" alt="{{ combo.fighting_style }}">
-                    <img src="../static/img/{{ combo.sword }}.png" alt="{{ combo.sword }}">
-                    <img src="../static/img/{{ combo.gun }}.png" alt="{{ combo.gun }}">
-                    <form method="get" action="{{ url_for('your_combo', id=combo.id)}}" style="display: inline;">
-                        <button class="btn btn-warning" type="submit">View Combo</button>
-                    </form>
-                </div>
+            <div class="combo">
+                <h3>{{ combo.combo_name }}</h3>
+                <img src="../static/img/{{ combo.fruit }}.png" alt="{{ combo.fruit }}">
+                <img src="../static/img/{{ combo.fighting_style }}.png" alt="{{ combo.fighting_style }}">
+                <img src="../static/img/{{ combo.sword }}.png" alt="{{ combo.sword }}">
+                <img src="../static/img/{{ combo.gun }}.png" alt="{{ combo.gun }}">
+                <form method="get" action="{{ url_for('your_combo', id=combo.id)}}" style="display: inline;">
+                    <button class="btn btn-warning" type="submit">View Combo</button>
+                </form>
             </div>
         </div>
         {% endfor %}
+
+        <a class="load-more">
+            Load More
+        </a>
+        <input type="hidden" id="page-count" value="1">
     </main>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
