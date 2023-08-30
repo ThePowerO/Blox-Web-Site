@@ -19,6 +19,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const loadMoreButton = document.querySelector(".load-more");
 
 
 /* */
