@@ -207,6 +207,7 @@ def search_combos():
     return render_template("community_combo.html", user_nickname=user_nickname, combos=combos)
 
 @app.route('/load_more_combos')
+def load_more_combos():
 
 
 if __name__ == '__main__':
