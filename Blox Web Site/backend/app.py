@@ -213,6 +213,7 @@ def load_more_combos():
 
     user = User.query.filter_by(nickname=session['user_nickname']).first()
 
+    offset = (page - 1) * combos_per_page
 
 
 if __name__ == '__main__':
