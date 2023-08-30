@@ -208,6 +208,7 @@ def search_combos():
 
 @app.route('/load_more_combos')
 def load_more_combos():
+    page = int(request.args.get('page', 1))
 
 
 if __name__ == '__main__':
