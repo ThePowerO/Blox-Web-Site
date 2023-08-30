@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const nextPage = currentPage + 1;
 
         fetch(`/community_combo?page=${nextPage}`, { method: "GET" })
+            .then(response => response.text())
 
 
 /* */
