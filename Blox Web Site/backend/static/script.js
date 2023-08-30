@@ -18,6 +18,9 @@ document.addEventListener('click', (e) => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+
+
 /* */
 const selectElements = document.querySelectorAll(".filter");
 const imageElements = document.querySelectorAll(".fightingStyleImage");
