@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const currentPage = parseInt(pageCountInput.value);
         const nextPage = currentPage + 1;
 
+        fetch(`/community_combo?page=${nextPage}`, { method: "GET" })
+
 
 /* */
 const selectElements = document.querySelectorAll(".filter");
