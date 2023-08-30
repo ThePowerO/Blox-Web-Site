@@ -214,6 +214,7 @@ def load_more_combos():
     user = User.query.filter_by(nickname=session['user_nickname']).first()
 
     offset = (page - 1) * combos_per_page
+    combos = Combo.query.filter_by(user_id=user.id).offset(offset).limit(combos_per_page).all()
 
 
 if __name__ == '__main__':
