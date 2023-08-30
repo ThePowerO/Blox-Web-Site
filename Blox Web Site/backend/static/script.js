@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.text())
             .then(html => {
                 const parser = new DOMParser();
+                const newCombos = parser.parseFromString(html, "text/html").querySelectorAll(".content");
 
 
 /* */
