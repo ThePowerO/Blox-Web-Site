@@ -206,5 +206,8 @@ def search_combos():
     user_nickname = session.get('user_nickname')
     return render_template("community_combo.html", user_nickname=user_nickname, combos=combos)
 
+@app.route('/load_more_combos')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
