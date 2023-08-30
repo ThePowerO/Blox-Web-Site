@@ -216,6 +216,8 @@ def load_more_combos():
     offset = (page - 1) * combos_per_page
     combos = Combo.query.filter_by(user_id=user.id).offset(offset).limit(combos_per_page).all()
 
+    return render_template('combo_list.html', combos=combos)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
