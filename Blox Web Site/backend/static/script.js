@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pageCountInput = document.querySelector("#page-count");
     loadMoreButton.addEventListener("click", function() {
         const currentPage = parseInt(pageCountInput.value);
+        const nextPage = currentPage + 1;
 
 
 /* */
