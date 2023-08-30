@@ -209,6 +209,7 @@ def search_combos():
 @app.route('/load_more_combos')
 def load_more_combos():
     page = int(request.args.get('page', 1))
+    combos_per_page = 10
 
 
 if __name__ == '__main__':
