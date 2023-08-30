@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(`/community_combo?page=${nextPage}`, { method: "GET" })
             .then(response => response.text())
             .then(html => {
+                const parser = new DOMParser();
 
 
 /* */
