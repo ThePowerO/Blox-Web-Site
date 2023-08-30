@@ -18,9 +18,11 @@ document.addEventListener('click', (e) => {
     }
 });
 
+/* */
 document.addEventListener("DOMContentLoaded", function() {
     const loadMoreButton = document.querySelector(".load-more");
     const pageCountInput = document.querySelector("#page-count");
+
     loadMoreButton.addEventListener("click", function() {
         const currentPage = parseInt(pageCountInput.value);
         const nextPage = currentPage + 1;
@@ -39,7 +41,19 @@ document.addEventListener("DOMContentLoaded", function() {
                     mainContainer.appendChild(newCombo);
                 });
 
-                
+                pageCountInput.value = nextPage;
+
+                if (newCombos.length === 0) {
+                    loadMoreButton.style.display = "none";
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching combos:", error);
+            });
+    });
+});
+
+
 
 /* */
 const selectElements = document.querySelectorAll(".filter");
@@ -284,7 +298,7 @@ selectElements.forEach((selectElement, index) => {
                 imageElement.src = "../static/img/Sharkman Karate.png"; 
             }
             else if (selectedValue === "Super Human") {
-                imageElement.src = "../static/img/Superhuman.png"; 
+                imageElement.src = "../static/img/Super Human.png"; 
             }
             else if (selectedValue === "Death Step") {
                 imageElement.src = "../static/img/Death Step.png"; 
