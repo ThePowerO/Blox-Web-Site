@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const parser = new DOMParser();
                 const newCombos = parser.parseFromString(html, "text/html").querySelectorAll(".content");
 
+                // Get the main container
 
 /* */
 const selectElements = document.querySelectorAll(".filter");
