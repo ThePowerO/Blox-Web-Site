@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Get the main container
                 const mainContainer = document.querySelector("#main");
 
+                // Loop through new combos and append them to the main container
+
+                
+
 /* */
 const selectElements = document.querySelectorAll(".filter");
 const imageElements = document.querySelectorAll(".fightingStyleImage");
