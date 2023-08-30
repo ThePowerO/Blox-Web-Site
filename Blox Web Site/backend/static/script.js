@@ -20,6 +20,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener("DOMContentLoaded", function() {
     const loadMoreButton = document.querySelector(".load-more");
+    const pageCountInput = document.querySelector("#page-count");
 
 
 /* */
