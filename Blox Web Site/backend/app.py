@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -80,14 +80,18 @@ def view_combo():
 
 @app.route('/community_combo')
 def community_combo():
+    page = request.args.get('page', 1, type=int)
+    per_page = 10
+
     if request.method == 'POST':
         query = request.form.get('query')
-        combos = Combo.query.filter(Combo.combo_name.ilike(f'%{query}%')).all()
+        combos = Combo.query.filter(Combo.combo_name.ilike(f'%{query}%')).paginate(page=page, per_page=per_page)
     else:
-        combos = Combo.query.all()
+        combos = Combo.query.paginate(page=page, per_page=per_page)
 
     user_nickname = session.get('user_nickname')
     return render_template("community_combo.html", user_nickname=user_nickname, combos=combos)
+
 
 @app.route('/create_acc', methods=["POST", "GET"])
 def create_acc():
@@ -210,14 +214,13 @@ def search_combos():
 def load_more_combos():
     page = int(request.args.get('page', 1))
     combos_per_page = 10
-
+    
     user = User.query.filter_by(nickname=session['user_nickname']).first()
-
+    
     offset = (page - 1) * combos_per_page
     combos = Combo.query.filter_by(user_id=user.id).offset(offset).limit(combos_per_page).all()
 
     return render_template('combo_list.html', combos=combos)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
