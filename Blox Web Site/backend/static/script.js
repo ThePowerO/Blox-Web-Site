@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const mainContainer = document.querySelector("#main");
 
                 // Loop through new combos and append them to the main container
+                newCombos.forEach(newCombo => {
 
                 
 
