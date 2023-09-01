@@ -1,1 +1,2 @@
 // Português
+$(".br").click(function () {
