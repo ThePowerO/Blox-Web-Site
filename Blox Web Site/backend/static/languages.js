@@ -17,3 +17,4 @@ $(".en").click(function () {
     $(".nav").children().eq(1).text("Dashboard");
     $(".nav").children().eq(2).text("Log In");
     $(".nav").children().eq(3).text("Create Account");
+    $(".language-selected").text("en-US");
