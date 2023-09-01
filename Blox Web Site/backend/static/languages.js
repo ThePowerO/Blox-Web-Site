@@ -8,3 +8,4 @@ $(".br").click(function () {
     $(".language-selected").removeClass("change-en change-fr change-kr");
     $(".language-selected").addClass("change-br");
     // Get Started
+    $(".get-started").text("Comece Já");
