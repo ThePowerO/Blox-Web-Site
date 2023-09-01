@@ -5,3 +5,4 @@ $(".br").click(function () {
     $(".nav").children().eq(2).text("Entrar");
     $(".nav").children().eq(3).text("Criar Conta");
     $(".language-selected").text("pt-BR");
+    $(".language-selected").removeClass("change-en change-fr change-kr");
