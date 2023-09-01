@@ -23,3 +23,5 @@ $(".en").click(function () {
     // Get Started
     $(".get-started").text("Get Started");
 });
+
+// Français
