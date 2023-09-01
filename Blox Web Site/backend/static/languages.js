@@ -3,3 +3,4 @@ $(".br").click(function () {
     // Header
     $(".nav").children().eq(1).text("Dashboard");
     $(".nav").children().eq(2).text("Entrar");
+    $(".nav").children().eq(3).text("Criar Conta");
