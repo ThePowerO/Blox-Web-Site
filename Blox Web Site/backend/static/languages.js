@@ -21,3 +21,4 @@ $(".en").click(function () {
     $(".language-selected").removeClass("change-br change-fr change-kr");
     $(".language-selected").addClass("change-en");
     // Get Started
+    $(".get-started").text("Get Started");
