@@ -26,3 +26,4 @@ $(".en").click(function () {
 
 // Français
 $(".fr").click(function () {
+    // Header
