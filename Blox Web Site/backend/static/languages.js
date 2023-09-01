@@ -22,3 +22,4 @@ $(".en").click(function () {
     $(".language-selected").addClass("change-en");
     // Get Started
     $(".get-started").text("Get Started");
+});
