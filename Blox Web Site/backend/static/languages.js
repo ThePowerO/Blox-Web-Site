@@ -27,3 +27,4 @@ $(".en").click(function () {
 // Français
 $(".fr").click(function () {
     // Header
+    $(".nav").children().eq(1).text("Dashboard");
