@@ -28,3 +28,24 @@ $(".en").click(function () {
 $(".fr").click(function () {
     // Header
     $(".nav").children().eq(1).text("Dashboard");
+    $(".nav").children().eq(2).text("Entrer");
+    $(".nav").children().eq(3).text("Crée Compte");
+    $(".language-selected").text("FR");
+    $(".language-selected").removeClass("change-br change-en change-kr");
+    $(".language-selected").addClass("change-fr");
+    // Get Started
+    $(".get-started").text("Commencer");
+});
+
+// 한국어
+$(".kr").click(function () {
+    // Header
+    $(".nav").children().eq(1).text("대시보드");
+    $(".nav").children().eq(2).text("로그인");
+    $(".nav").children().eq(3).text("계정 생성");
+    $(".language-selected").text("KR");
+    $(".language-selected").removeClass("change-br change-en change-fr");
+    $(".language-selected").addClass("change-kr");
+    // Get Started
+    $(".get-started").text("시작");
+});
