@@ -10,3 +10,5 @@ $(".br").click(function () {
     // Get Started
     $(".get-started").text("Comece Já");
 });
+
+// English
