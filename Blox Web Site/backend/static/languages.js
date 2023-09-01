@@ -20,3 +20,4 @@ $(".en").click(function () {
     $(".language-selected").text("en-US");
     $(".language-selected").removeClass("change-br change-fr change-kr");
     $(".language-selected").addClass("change-en");
+    // Get Started
