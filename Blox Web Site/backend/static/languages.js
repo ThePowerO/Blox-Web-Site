@@ -7,3 +7,4 @@ $(".br").click(function () {
     $(".language-selected").text("pt-BR");
     $(".language-selected").removeClass("change-en change-fr change-kr");
     $(".language-selected").addClass("change-br");
+    // Get Started
