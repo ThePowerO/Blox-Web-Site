@@ -19,3 +19,4 @@ $(".en").click(function () {
     $(".nav").children().eq(3).text("Create Account");
     $(".language-selected").text("en-US");
     $(".language-selected").removeClass("change-br change-fr change-kr");
+    $(".language-selected").addClass("change-en");
