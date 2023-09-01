@@ -9,3 +9,4 @@ $(".br").click(function () {
     $(".language-selected").addClass("change-br");
     // Get Started
     $(".get-started").text("Comece Já");
+});
