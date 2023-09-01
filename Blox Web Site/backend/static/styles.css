@@ -8,7 +8,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51, 0.3),rgba(12,3,51, 0.3));
+    background-image: linear-gradient(rgba(12,3,51, 0.3),rgba(89, 72, 168, 0.3));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -35,16 +35,17 @@ nav .logo {
 nav ul li {
     list-style: none;
     display: inline;
-    margin-left: 40px;
+    margin-left: 10px;
+    margin-right: 40px;
 }
 
-nav ul li a{
+nav a{
     text-decoration: none;
     color: #fff;
     font-size: 17px;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: rgb(135, 185, 241)
 }
 
@@ -94,4 +95,117 @@ nav ul li a:hover {
         width: auto;
         height: 100%;
     }
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* jQuery class */
+.language-selected.change-br::before {
+    background-image: url(../static/img/brazil.png);
+}
+
+.language-selected.change-en::before {
+    background-image: url(../static/img/us.png);
+}
+
+.language-selected.change-fr::before {
+    background-image: url(../static/img/france.png);
+}
+
+.language-selected.change-kr::before {
+    background-image: url(../static/img/korea.png);
+}
+
+/* Language */
+.language {
+    position: relative;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+}
+
+.language-selected::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../static/img/us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding-top: 5px 10px;
+}
+
+.language ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br::before {
+    background-image: url(../static/img/brazil.png);
+}
+
+a.en::before {
+    background-image: url(../static/img/us.png);
+}
+
+a.fr::before {
+    background-image: url(../static/img/france.png);
+}
+
+a.kr::before {
+    background-image: url(../static/img/korea.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.language ul {
+    background-color: transparent;
+    border: none;
+}
+
+.language ul li a {
+    color: #fff;
 }
