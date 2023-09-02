@@ -91,3 +91,107 @@ html, body {
 .nav-menu #logout:hover > i {
     color: #d86161;
 }
+
+/* jQuery class */
+.language-selected.change-br::before {
+    background-image: url(../static/img/brazil.png);
+}
+
+.language-selected.change-en::before {
+    background-image: url(../static/img/us.png);
+}
+
+.language-selected.change-fr::before {
+    background-image: url(../static/img/france.png);
+}
+
+.language-selected.change-kr::before {
+    background-image: url(../static/img/korea.png);
+}
+
+/* Language */
+.language {
+    top: 0;
+    left: 52rem;
+    position: relative;
+    align-items: center;
+    color: #021124;
+    cursor: pointer;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+}
+
+.language-selected::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../static/img/us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding-top: 5px 10px;
+}
+
+.language ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br::before {
+    background-image: url(../static/img/brazil.png);
+}
+
+a.en::before {
+    background-image: url(../static/img/us.png);
+}
+
+a.fr::before {
+    background-image: url(../static/img/france.png);
+}
+
+a.kr::before {
+    background-image: url(../static/img/korea.png);
+}
+
+
+
+.language:hover ul {
+    display: block;
+}
+
+.language ul {
+    background-color: transparent;
+    border: none;
+}
+
+.language ul li a {
+    color: #021124;
+}
