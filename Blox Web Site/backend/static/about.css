@@ -1,1 +1,30 @@
+.about {
+    margin-left: 300px;
+    font-family: sans-serif;
+}
 
+#introduction {
+    font-weight: bold;
+    margin-left: 4.5rem;
+}
+
+.combo-creation {
+    margin-left: 4rem;
+    width: 800px;
+    border-bottom: 2px solid black;
+}
+
+.combo-creation h2 {
+    margin-left: 8rem;
+    margin-bottom: 25px;
+}
+
+.combo-creation p {
+    margin-left: 3.5rem;
+}
+
+.combo-creation p span {
+    color: rgb(139, 78, 21);
+}
+
+/* */
