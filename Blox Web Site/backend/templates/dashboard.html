@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../static/dashboard.css">
-</head>
+    <link rel="stylesheet" href="../static/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <body>
     
     <aside id="header">
@@ -40,10 +41,10 @@
                   <a class="nav-link" href="{{url_for('create_combo')}}"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Your Combo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
+                  <a class="nav-link" href="{{url_for('view_combo')}}"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
+                    <a class="nav-link" href="{{url_for('community_combo')}}"><i class="bi bi-people" aria-hidden="true"></i> Community</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
@@ -55,6 +56,44 @@
         </nav>
     </aside>
 
+    
+
+    <div class="about">
+        <p id="introduction">Here you can create combos for yourself and share it with peoples
+            and also, with a community, you can look for interesting combos and ideas,
+            therefore make sure to keep up with new combos!
+        </p>
+
+        <ul>
+            <div class="language">
+              <div class="language-selected">
+                en-US
+              </div>
+              <ul>
+                <li><a href="#" class="br">Português</a></li>
+                <li><a href="#" class="en">English</a></li>
+                <li><a href="#" class="fr">Français</a></li>
+                <li><a href="#" class="kr">한국어</a></li>
+              </ul>
+            </div>
+            
+          </ul>
+
+        <div class="combo-creation">
+            <h2 id="title-about">Creating & Viewing a Combo</h2>
+            <p id="preview-about">
+                Create a combo by clicking on "<span>Create Your Combo</span>" and when creating a combo you can: pick any <span>Fruit</span>, 
+                <span>Fighting Style</span>, <span>Sword</span>, <span>Gun</span> and along with it, it's possible to name the combo and insert a 
+                description about the combo(max 14). After the process of the combo creation, in the "<span>View Combo</span>"
+                you can manage your combo with three options which they are: Delete(to delete your combo), Edit Combo 
+                and View combo. In the Edit Combo option, you can make changes on everything and in the View Combo 
+                option you just see. Also after you create your combo, it is visible in the <span>Community</span> option, 
+                in it you can search for any combo that has been created.
+            </p>
+        </div>
+    </div>
+
+    <script src="../static/languagesabout.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
     <script src="../static/script.js"></script>
