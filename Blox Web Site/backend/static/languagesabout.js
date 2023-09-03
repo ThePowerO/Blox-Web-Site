@@ -17,3 +17,5 @@ $(".br").click(function () {
     $(".language-selected").addClass("change-br");
 
 });
+
+// English
