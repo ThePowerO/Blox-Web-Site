@@ -8,3 +8,4 @@ $(".br").click(function () {
     $("#nav ul li:nth-child(5) a").html('<i class="bi bi-card-text" aria-hidden="true"></i> Página Principal');
     $("#logout").html('<i class="bi bi-door-open" aria-hidden="true"></i> Sair');
     // About
+    $("#title-about").text('Criando & Visualizando um Combo')
