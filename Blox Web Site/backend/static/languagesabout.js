@@ -19,3 +19,4 @@ $(".br").click(function () {
 });
 
 // English
+$(".en").click(function () {
