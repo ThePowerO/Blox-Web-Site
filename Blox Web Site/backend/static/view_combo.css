@@ -61,3 +61,12 @@ body {
     width: 700px;
     display: inline;
 }
+
+/* Language */
+.language {
+    top: 18px;
+}
+
+.add-margin-left {
+    margin-left: 10px;
+}
