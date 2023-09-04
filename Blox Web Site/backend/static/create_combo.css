@@ -27,7 +27,7 @@
 .filter {
     margin-top: 10px;
     margin-left: 15px;
-    width: 200px;
+    width: 235px;
     padding: 2px;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,21 @@
     color: red;
 }
 
+/* #main {
+    width: 1066px;
+    background-color: red;
+    padding-bottom: 619px;
+    margin-left: 300px;
+}
+*/
+
 .Edit-Title {
     font-size: 24px;
     margin-left: 13px;
+}
+
+/*Language */
+.language {
+    margin-left: 20rem;
+    top: 30px;
 }
