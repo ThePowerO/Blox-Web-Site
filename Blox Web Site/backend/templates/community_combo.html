@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/create_combo.css">
     <link rel="stylesheet" href="../static/view_combo.css">
     <link rel="stylesheet" href="../static/community_combo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     
@@ -37,7 +38,10 @@
         <nav id="nav" class="nav-menu mt-4">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{url_for('create_combo')}}"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Your Combo</a>
+                    <a class="nav-link" aria-current="page" href="{{url_for('dashboard')}}"><i class="bi bi-book" aria-hidden="true"></i> About</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('create_combo')}}"><i class="bi bi-plus-square" aria-hidden="true"></i> Create Combo</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{url_for('view_combo')}}"><i class="bi bi-journals" aria-hidden="true"></i> View Combo</a>
@@ -48,16 +52,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-card-text" aria-hidden="true"></i> Main Page</a>
                 </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link" href="{{url_for('register')}}"><i class="bi bi-door-open" aria-hidden="true"></i> Log Out</a>
+                </li>
               </ul>
         </nav>
     </aside>
 
     <main id="main">
         <!-- Existing content -->
-        <h2>Community Combos</h2>
+        <h2 id="title-community">Community Combos</h2>
         <section id="search-bar" >
             <form action="{{ url_for('search_combos') }}" method="get">
-                <input type="text" name="query" class="form-control mr-sm-2" placeholder="Search for combos" aria-label="Search">
+                <input id="search-combo" type="text" name="query" class="form-control mr-sm-2" placeholder="Search for combos" aria-label="Search">
                 <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">Search</button>
             </form>
         </section>
@@ -73,6 +80,7 @@
                     <button class="btn btn-warning" type="submit">View Combo</button>
                 </form>
             </div>
+            </form>
         </div>
         {% endfor %}
 
@@ -81,6 +89,99 @@
         </a>
         <input type="hidden" id="page-count" value="1">
     </main>
+
+    <ul>
+        <div class="language">
+          <div class="language-selected">
+            en-US
+          </div>
+          <ul>
+            <li><a href="#" class="br">Português</a></li>
+            <li><a href="#" class="en">English</a></li>
+            <li><a href="#" class="fr">Français</a></li>
+            <li><a href="#" class="kr">한국어</a></li>
+          </ul>
+        </div>
+        
+    </ul>
+
+    <script>
+        // Portuguese
+        $(".br").click(function () {
+            //Title
+            $('#title-community').text("Combos da Comunidade:")
+            // Search Bar
+            $('#search-combo').attr('placeholder', 'Pesquise por combos');
+            // Things to Toggle
+            $(".language-selected").text("pt-BR");
+            $(".language-selected").removeClass("change-en change-fr change-kr");
+            $(".language-selected").addClass("change-br");
+            // Nav Section
+            $("#nav ul li:nth-child(1) a").html('<i class="bi bi-book" aria-hidden="true"></i> Sobre');
+            $("#nav ul li:nth-child(2) a").html('<i class="bi bi-plus-square" aria-hidden="true"></i> Criar Combo');
+            $("#nav ul li:nth-child(3) a").html('<i class="bi bi-journals" aria-hidden="true"></i> Ver Combo');
+            $("#nav ul li:nth-child(4) a").html('<i class="bi bi-people" aria-hidden="true"></i> Comunidade');
+            $("#nav ul li:nth-child(5) a").html('<i class="bi bi-card-text" aria-hidden="true"></i> Página Principal');
+            $("#logout").html('<i class="bi bi-door-open" aria-hidden="true"></i> Sair');
+        });
+
+        // English
+        $(".en").click(function () {
+            //Title
+            $('#title-community').text("Community Combos:")
+            // Search Bar
+            $('#search-combo').attr('placeholder', 'Search for combos');
+            // Things to Toggle
+            $(".language-selected").text("en-US");
+            $(".language-selected").removeClass("change-pt change-fr change-kr");
+            $(".language-selected").addClass("change-en");
+            // Nav Section
+            $("#nav ul li:nth-child(1) a").html('<i class="bi bi-book" aria-hidden="true"></i> About');
+            $("#nav ul li:nth-child(2) a").html('<i class="bi bi-plus-square" aria-hidden="true"></i> Create Combo');
+            $("#nav ul li:nth-child(3) a").html('<i class="bi bi-journals" aria-hidden="true"></i> View Combo');
+            $("#nav ul li:nth-child(4) a").html('<i class="bi bi-people" aria-hidden="true"></i> Community');
+            $("#nav ul li:nth-child(5) a").html('<i class="bi bi-card-text" aria-hidden="true"></i> Main Page');
+            $("#logout").html('<i class="bi bi-door-open" aria-hidden="true"></i> Log Out');
+        });
+
+        // Français
+        $(".fr").click(function () {
+            //Title
+            $('#title-community').text("Combo de la Communauté:")
+            // Search Bar
+            $('#search-combo').attr('placeholder', 'Trouver pour des combo');
+            // Things to Toggle
+            $(".language-selected").text("FR");
+            $(".language-selected").removeClass("change-br change-en change-kr");
+            $(".language-selected").addClass("change-fr");
+            // Nav Section
+            $("#nav ul li:nth-child(1) a").html('<i class="bi bi-book" aria-hidden="true"></i> À Propos');
+            $("#nav ul li:nth-child(2) a").html('<i class="bi bi-plus-square" aria-hidden="true"></i> Créer Combo');
+            $("#nav ul li:nth-child(3) a").html('<i class="bi bi-journals" aria-hidden="true"></i> Voir Combo');
+            $("#nav ul li:nth-child(4) a").html('<i class="bi bi-people" aria-hidden="true"></i> Communauté');
+            $("#nav ul li:nth-child(5) a").html('<i class="bi bi-card-text" aria-hidden="true"></i> Page Principale');
+            $("#logout").html('<i class="bi bi-door-open" aria-hidden="true"></i> Sortir');
+        });
+
+        // 한국어
+        $(".kr").click(function () {
+            //Title
+            $('#title-community').text("커뮤니티 콤보:")
+            // Search Bar
+            $('#search-combo').attr('placeholder', '콤보를 검색해 보세요');
+            // Things to Toggle
+            $(".language-selected").text("KR");
+            $(".language-selected").removeClass("change-br change-en change-fr");
+            $(".language-selected").addClass("change-kr");
+            // Nav Section
+            $("#nav ul li:nth-child(1) a").html('<i class="bi bi-book" aria-hidden="true"></i> 정보');
+            $("#nav ul li:nth-child(2) a").html('<i class="bi bi-plus-square" aria-hidden="true"></i> 콤보 만들기');
+            $("#nav ul li:nth-child(3) a").html('<i class="bi bi-journals" aria-hidden="true"></i> 콤보 보기');
+            $("#nav ul li:nth-child(4) a").html('<i class="bi bi-people" aria-hidden="true"></i> 커뮤니티');
+            $("#nav ul li:nth-child(5) a").html('<i class="bi bi-card-text" aria-hidden="true"></i> 메인 페이지');
+            $("#logout").html('<i class="bi bi-door-open" aria-hidden="true"></i> 로그 아웃');
+        });
+    </script>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
