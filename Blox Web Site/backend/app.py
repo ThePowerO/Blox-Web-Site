@@ -227,6 +227,7 @@ def load_more_combos():
 def profile():
 
     user_nickname = session.get('user_nickname')
+    return render_template("profile.html", user_nickname=user_nickname)
 
 if __name__ == '__main__':
     app.run(debug=True)
