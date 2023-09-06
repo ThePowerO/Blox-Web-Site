@@ -224,6 +224,7 @@ def load_more_combos():
 
 # Meunu Route Options
 @app.route('/profile')
+def profile():
 
 
 if __name__ == '__main__':
