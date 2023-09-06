@@ -16,3 +16,4 @@ body {
     width: 60rem;
     height: 560px;
     background-color: red;
+    border: 2px solid rgba(255, 255, 255, .5);
