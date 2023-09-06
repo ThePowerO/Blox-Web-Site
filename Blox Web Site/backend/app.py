@@ -226,6 +226,7 @@ def load_more_combos():
 @app.route('/profile')
 def profile():
 
+    user_nickname = session.get('user_nickname')
 
 if __name__ == '__main__':
     app.run(debug=True)
