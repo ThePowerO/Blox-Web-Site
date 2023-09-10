@@ -198,3 +198,4 @@ body {
 
 .combo {
     display: flex;
+    flex-direction: column;
