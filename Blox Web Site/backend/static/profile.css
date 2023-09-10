@@ -192,3 +192,4 @@ body {
 
 .combo-list {
     display: flex;
+    align-items: center;
