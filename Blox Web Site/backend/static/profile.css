@@ -185,3 +185,7 @@ body {
     width: 70px;
     transition: 0.5s;
 }
+
+.edit-square img:hover {
+    border-color: rgba(255, 255, 255, .5);
+}
