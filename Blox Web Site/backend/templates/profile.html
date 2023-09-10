@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
     <main id="main">
@@ -28,11 +31,12 @@
             </div>
             
         </div>
+               
 
         <form>
             <h2 id="user-nickname" class="edit-title">Nickname</h2>
             <input id="nickname" type="text" name="user-name" placeholder="Nickname" maxlength="15" required>
-
+        
             <div class="bio-container">
                 <h2 class="bio-title">Bio</h2>
                 <textarea id="bio-description" name="user-bio" placeholder="Add a bio"></textarea>
@@ -42,12 +46,12 @@
                 <a href="{{url_for('dashboard')}}"><button class="btn btn-outline-secondary" type="button">Cancel</button></a>
                 <a href="#"><button class="btn btn-success">Save</button></a>
             </div>
-
+            
         </form>
-
-
-
         
     </main>
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
