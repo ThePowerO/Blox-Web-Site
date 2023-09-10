@@ -20,26 +20,166 @@
             </div>
 
             <div class="content">
+                <h2 id="fav-combo-title">Favorite/Main Combo</h2>
                 <div class="combo-list">
                     <div class="combo">
-                        <img id="img1" src="../static/img/Portal.png">
-                        <img src="../static/img/Godhuman.png">
-                        <img src="../static/img/Cursed Dual Katana.png">
-                        <img src="../static/img/Soul Guitar.png">
+                        <select class="filter" name="fruit">
+                            <option id="select-fruit" value="Bomb">Fruit</option>
+                            <option value="Leopard">Leopard</option>
+                            <option value="Blizzard">Blizzard</option>
+                            <option value="Dough">Dough</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Shadow">Shadow</option>
+                            <option value="Portal">Portal</option>
+                            <option value="Venom">Venom</option>
+                            <option value="Gravity">Gravity</option>
+                            <option value="Phoenix">Phoenix</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Paw">Paw</option>
+                            <option value="Spider">Spider</option>
+                            <option value="Love">Love</option>
+                            <option value="Quake">Quake</option>
+                            <option value="Magma">Magma</option>
+                            <option value="Spirit">Spirit</option>
+                            <option value="Dark">Dark</option>
+                            <option value="Light">Light</option>
+                            <option value="Sand">Sand</option>
+                            <option value="Flame">Flame</option>
+                            <option value="Ice">Ice</option>
+                            <option value="Revive">Revive</option>
+                            <option value="Control">Control</option>
+                            <option value="Spike">Spike</option>
+                            <option value="Spring">Spring</option>
+                            <option value="Smoke">Smoke</option>
+                            <option value="Falcon">Falcon</option>
+                            <option value="Spin">Spin</option>
+                            <option value="Kilo">Kilo</option>
+                            <option value="Chop">Chop</option>
+                            <option value="Diamond">Diamond</option>
+                            <option value="Barrier">Barrier</option>
+                            <option value="Rubber">Rubber</option>
+                            <option value="Bomb">Bomb</option>
+                        </select>
+                        <img class="fightingStyleImage" src="../static/img/Bomb.png" title="Blox Fruit">
                     </div>
+            
+                    <div class="combo">
+                        <select class="filter" name="fighting_style">
+                            <option id="select-fighting-style" value="Combat">Fighting Style</option>
+                            <option value="Godhuman">Godhuman</option>
+                            <option value="Electric Claw">Electric Claw</option>
+                            <option value="Dragon Talon">Dragon Talon</option>
+                            <option value="Death Step">Death Step</option>
+                            <option value="Sharkman Karate">Sharkman Karate</option>
+                            <option value="Super Human">Super Human</option>
+                            <option value="Water Kung Fu">Water Kung Fu</option>
+                            <option value="Electric">Electric</option>
+                            <option value="Dragon Breath">Dragon Breath</option>
+                            <option value="Dark Step">Dark Step</option>
+                            <option value="Combat">Combat</option>
+                        </select>
+                        <img class="fightingStyleImage" src="../static/img/Combat.png" title="Fighting Style">
+                    </div>
+                        
+                    <div class="combo">
+                        <select class="filter" name="sword">
+                            <option id="select-sword" value="Katana">Sword</option>
+                            <option value="Triple Dark Blade">Triple Dark Blade</option>
+                            <option value="Dark Blade">Dark Blade</option>
+                            <option value="Cursed Dual Katana">Cursed Dual Katana</option>
+                            <option value="Spikey Trident">Spikey Trident</option>
+                            <option value="Pole (2nd Form)">Pole (2nd Form)</option>
+                            <option value="Shisui">Shisui</option>
+                            <option value="Dark Dagger">Dark Dagger</option>
+                            <option value="Yama">Yama</option>
+                            <option value="Wando">Wando</option>
+                            <option value="Tushita">Tushita</option>
+                            <option value="Canvander">Canvander</option>
+                            <option value="Twin Hooks">Twin Hooks</option>
+                            <option value="Buddy Sword">Buddy Sword</option>
+                            <option value="Hallow Scythe">Hallow Scythe</option>
+                            <option value="Rengoku">Rengoku</option>
+                            <option value="True Triple Katana">True Triple Katana</option>
+                            <option value="Koko">Koko</option>
+                            <option value="Midnight Blade">Midnight Blade</option>
+                            <option value="Jitte">Jitte</option>
+                            <option value="Soul Cane">Soul Cane</option>
+                            <option value="Saber">Saber</option>
+                            <option value="Bisento">Bisento</option>
+                            <option value="Trident">Trident</option>
+                            <option value="Warden Sword">Warden Sword</option>
+                            <option value="Pole (1st Form)">Pole (1st Form)</option>
+                            <option value="Iron Mace">Iron Mace</option>
+                            <option value="Shark Saw">Shark Saw</option>
+                            <option value="Triple Katana">Triple Katana</option>
+                            <option value="Cutlass">Cutlass</option>
+                            <option value="Katana">Katana</option>
+                            <option value="Dual Katana">Dual Katana</option>
+                            <option value="Pipe">Pipe</option>
+                            <option value="Gravity Cane">Gravity Cane</option>
+                            <option value="Longsword">Longsword</option>
+                            <option value="Dragon Trident">Dragon Trident</option>
+                            <option value="Dual-Headed Blade">Dual-Headed Blade</option>
+                        </select>
+                        <img class="fightingStyleImage" src="../static/img/Katana.png" title="Sword">
+                    </div>
+                        
+                    <div class="combo">
+                        <select class="filter" name="gun">
+                            <option id="select-gun" value="Slingshot">Gun</option>
+                            <option value="Soul Guitar">Soul Guitar</option>
+                            <option value="Acidum Rifle">Acidum Rifle</option>
+                            <option value="Kabucha">Kabucha</option>
+                            <option value="Serpent Bow">Serpent Bow</option>
+                            <option value="Bizarre Rifle">Bizarre Rifle</option>
+                            <option value="Bazooka">Bazooka</option>
+                            <option value="Refined Musket">Refined Musket</option>
+                            <option value="Refined Flintlock">Refined Flintlock</option>
+                            <option value="Refined Slingshot">Refined Slingshot</option>
+                            <option value="Musket">Musket</option>
+                            <option value="Flintlock">Flintlock</option>
+                            <option value="Slingshot">Slingshot</option>
+                            <option value="Cannon">Cannon</option>
+                        </select>
+                        <img class="fightingStyleImage" src="../static/img/Slingshot.png" title="Gun">
+                    </div>
+                    
                 </div>
             </div>
-            
         </div>
                
-
         <form>
+            
+
             <h2 id="user-nickname" class="edit-title">Nickname</h2>
             <input id="nickname" type="text" name="user-name" placeholder="Nickname" maxlength="15" required>
-        
+
             <div class="bio-container">
                 <h2 class="bio-title">Bio</h2>
                 <textarea id="bio-description" name="user-bio" placeholder="Add a bio"></textarea>
+            </div>
+            <div class="edit-square" id="edit-square">
+                <!-- 1st line -->
+                <img src="../static/img/2channels4_profile.png">
+                <img src="../static/img/channels4_profile.png">
+                <img src="../static/img/slime.png">
+                <img src="../static/img/Dough.png">
+                <img src="../static/img/Dragon.png">
+                <img src="../static/img/Spirit.png">
+                <!-- 2nd line -->
+                <img src="../static/img/Portal.png">
+                <img src="../static/img/Buddha.png">
+                <img src="../static/img/Venom.png">
+                <img src="../static/img/Shadow.png">
+                <img src="../static/img/Dark.png">
+                <img src="../static/img/Light.png">
+                <img src="../static/img/Ice.png">
+                <!-- 3th line -->
+                <img src="../static/img/Godhuman.png">
+                <img src="../static/img/Kabucha.png">
+                <img src="../static/img/Triple Dark Blade.png">
+                <img src="../static/img/Cursed Dual Katana.png">
+                <img src="../static/img/Pole (2nd Form).png">
             </div>
 
             <div class="buttons-profile">
@@ -47,10 +187,28 @@
                 <a href="#"><button class="btn btn-success">Save</button></a>
             </div>
             
+
         </form>
-        
     </main>
 
+    <script>
+        const editIcon = document.querySelector(".edit-icon");
+        const editSquare = document.getElementById("edit-square");
+        
+        editSquare.style.display = "none";
+
+        editIcon.addEventListener("click", () => {
+        
+        if (editSquare.style.display === "block") {
+            editSquare.style.display = "none"; // open
+        } else {
+            editSquare.style.display = "block"; // close
+        }
+        });
+    </script>
+
+    <script src="../static/script.js"></script>
+    <script src="../static/profile.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
 </body>
