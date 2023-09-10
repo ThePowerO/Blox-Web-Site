@@ -183,3 +183,5 @@ body {
     border: 2px solid #021124;
     border-radius: 50%;
     width: 70px;
+    transition: 0.5s;
+}
