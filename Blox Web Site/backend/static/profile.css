@@ -173,3 +173,5 @@ body {
     top: 0;
     margin-top: 250px;
     left: calc(26% + 70px);
+    display: none;
+}
