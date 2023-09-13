@@ -229,3 +229,4 @@ body {
 
 .fruits {
     position: relative;
+    display: flex;
