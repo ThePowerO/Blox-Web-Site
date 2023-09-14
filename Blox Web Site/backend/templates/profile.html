@@ -35,20 +35,20 @@
             <img src="../static/img/Phoenix.png" style="--1:24;"></img>
             <img src="../static/img/Quake.png" style="--1:30;"></img>
             <img src="../static/img/Barrier.png" style="--1:19;"></img>
-            <img src="../static/img/Chop.png" style="--1:15;"></img>
             <img src="../static/img/Diamond.png" style="--1:27;"></img>
             <img src="../static/img/Spike.png" style="--1:30;"></img>
             <img src="../static/img/Falcon.png" style="--1:19;"></img>
-            <img src="../static/img/Spin.png" style="--1:21;"></img>
+            <img src="../static/img/Dragon.png" style="--1:21;"></img>
             <img src="../static/img/Paw.png" style="--1:23;"></img>
             <img src="../static/img/Smoke.png" style="--1:12;"></img>
             <img src="../static/img/Spider.png" style="--1:15;"></img>
 
-            <img src="../static/img/Control.png" style="--1:24;"></img>
+            <img src="../static/img/Control.png" style="--1:22;"></img>
             <img src="../static/img/Leopard.png" style="--1:19;"></img>
+            <img src="../static/img/Quake.png" style="--1:12;"></img>
             <img src="../static/img/Phoenix.png" style="--1:17;"></img>
-            <img src="../static/img/Triple Dark Blade.png" style="--1:25;"></img>
-            <img src="../static/img/Rumble.png" style="--1:28;"></img>
+            <img src="../static/img/Ice.png" style="--1:14;"></img>
+            <img src="../static/img/Rumble.png" style="--1:23;"></img>
         </div>
 
         <main id="main">
@@ -200,34 +200,56 @@
                 </div>
                 <div class="edit-square" id="edit-square">
                     <!-- 1st line -->
+                    <img class="image-choose hidden" src="../static/img/2channels4_profile.png">
+                    <img class="image-choose hidden" src="../static/img/channels4_profile.png">
+                    <img class="image-choose hidden" src="../static/img/slime.png">
+                    <img class="image-choose hidden" src="../static/img/Dough.png">
+                    <img class="image-choose hidden" src="../static/img/Dragon.png">
+                    <img class="image-choose hidden" src="../static/img/Spirit.png">
+                    <!-- 2nd line -->
+                    <img class="image-choose hidden" src="../static/img/Portal.png">
+                    <img class="image-choose hidden" src="../static/img/Buddha.png">
+                    <img class="image-choose hidden" src="../static/img/Venom.png">
+                    <img class="image-choose hidden" src="../static/img/Shadow.png">
+                    <img class="image-choose hidden" src="../static/img/Dark.png">
+                    <img class="image-choose hidden" src="../static/img/Light.png">
+                    <img class="image-choose hidden" src="../static/img/Ice.png">
+                    <!-- 3th line -->
+                    <img class="image-choose hidden" src="../static/img/Godhuman.png">
+                    <img class="image-choose hidden" src="../static/img/Kabucha.png">
+                    <img class="image-choose hidden" src="../static/img/Triple Dark Blade.png">
+                    <img class="image-choose hidden" src="../static/img/Cursed Dual Katana.png">
+                    <img class="image-choose hidden" src="../static/img/Pole (2nd Form).png">
+
+                    <!-- 1st line -->
                     <img class="image-choose" src="../static/img/2channels4_profile.png">
                     <img class="image-choose" src="../static/img/channels4_profile.png">
                     <img class="image-choose" src="../static/img/slime.png">
-                    <img class="image-choose" src="../static/img/Dough.png">
-                    <img class="image-choose" src="../static/img/Dragon.png">
-                    <img class="image-choose" src="../static/img/Spirit.png">
+                    <img class="image-choose" src="../static/img/Quake.png">
+                    <img class="image-choose" src="../static/img/Spring.png">
+                    <img class="image-choose" src="../static/img/Falcon.png">
                     <!-- 2nd line -->
-                    <img class="image-choose" src="../static/img/Portal.png">
-                    <img class="image-choose" src="../static/img/Buddha.png">
-                    <img class="image-choose" src="../static/img/Venom.png">
-                    <img class="image-choose" src="../static/img/Shadow.png">
-                    <img class="image-choose" src="../static/img/Dark.png">
-                    <img class="image-choose" src="../static/img/Light.png">
+                    <img class="image-choose" src="../static/img/Barrier.png">
+                    <img class="image-choose" src="../static/img/Bazooka.png">
+                    <img class="image-choose" src="../static/img/Dark Blade.png">
+                    <img class="image-choose" src="../static/img/Iron Mace.png">
+                    <img class="image-choose" src="../static/img/Saber.png">
+                    <img class="image-choose" src="../static/img/Sand.png">
                     <img class="image-choose" src="../static/img/Ice.png">
                     <!-- 3th line -->
-                    <img class="image-choose" src="../static/img/Godhuman.png">
-                    <img class="image-choose" src="../static/img/Kabucha.png">
+                    <img class="image-choose" src="../static/img/Dragon Talon.png">
+                    <img class="image-choose" src="../static/img/Dragon Trident.png">
                     <img class="image-choose" src="../static/img/Triple Dark Blade.png">
                     <img class="image-choose" src="../static/img/Cursed Dual Katana.png">
-                    <img class="image-choose" src="../static/img/Pole (2nd Form).png">
+                    <img class="image-choose" src="../static/img/Spider.png">
+                    <i id="next-section" class="bi bi-chevron-right"></i>
                 </div>
     
                 <div class="buttons-profile">
-                    <a href="{{url_for('dashboard')}}" class="btn btn-outline-secondary">Cancel</a>
-                    <button class="btn btn-success" type="submit">Save</button>
+                    <a href="{{url_for('dashboard')}}" class="cancel-button">Cancel</a>
+                    <button class="save-button" type="submit">Save</button>
                 </div>
                 
-    
             </form>
         </main>
 
@@ -274,13 +296,19 @@
         const nextSection = document.getElementById("next-section")
 
         nextSection.addEventListener("click", () => {
+            // Percorra todas as imagens
             imageOptions.forEach((image) => {
+                // Verifique se a imagem possui a classe "hidden"
                 if (image.classList.contains("hidden")) {
+                    // Se sim, remova a classe "hidden" para mostrar a imagem
                     image.classList.remove("hidden");
                 } else {
+                    // Caso contrário, adicione a classe "hidden" para ocultar a imagem
                     image.classList.add("hidden");
+                }
+            });
+        });
 
-            
     </script>
 
     <script src="../static/script.js"></script>
