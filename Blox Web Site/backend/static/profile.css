@@ -255,3 +255,4 @@ body {
 .edit-square i {
     align-items: center;
     display: flex;
+    position: absolute;
